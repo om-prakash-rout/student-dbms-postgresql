@@ -7,3 +7,7 @@ Folders:
 - database/ : backups
 - sql/ : SQL scripts
 - scripts/ : Python scripts
+
+## ER Diagram
+
+![ER Diagram](diagrams/er_diagram.png)
