@@ -10,4 +10,4 @@ Folders:
 
 ## ER Diagram
 
-![ER Diagram](diagrams/er_diagram.png)
+![ER Diagram](diagrams/ER_Diagram.png)
