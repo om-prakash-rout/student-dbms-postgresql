@@ -10,14 +10,14 @@ conn = psycopg2.connect(
 )
 cur = conn.cursor()
 
-# 1️⃣ Show all students
+# Show all students
 print("=== All Students ===")
 cur.execute("SELECT student_id, name, semester, course,>
 for row in cur.fetchall():
     print(row)
 print("\n")
 
-# 2️⃣ Show marks for a student
+# Show marks for a student
 student_id = "BCA-SF-25-001"
 print(f"=== Marks for {student_id} ===")
 cur.execute("""
@@ -32,7 +32,7 @@ for row in cur.fetchall():
     print(row)
 print("\n")
 
-# 3️⃣ Average marks per student
+# Average marks per student
 print("=== Average Marks per Student ===")
 cur.execute("""
 SELECT s.student_id, s.name, s.semester, ROUND(AVG(m.ma>
@@ -45,7 +45,7 @@ for row in cur.fetchall():
     print(row)
 print("\n")
 
-# 4️⃣ Topper per semester
+# Topper per semester
 print("=== Topper per Semester ===")
 cur.execute("""
 SELECT s.semester, s.student_id, s.name, ROUND(AVG(m.ma>
@@ -69,7 +69,7 @@ for row in cur.fetchall():
 print("\n")
 
 
-# 5️⃣ Students below 75% average (fail alert)
+# Students below 75% average (fail alert)
 print("=== Students Below 75% Average Marks ===")
 cur.execute("""
 SELECT s.student_id, s.name, s.semester, ROUND(AVG(m.ma>
@@ -84,7 +84,7 @@ for row in cur.fetchall():
 print("\n")
 
 
-# 6️⃣ Attendance report
+# Attendance report
 print("=== Attendance Report ===")
 cur.execute("""
 SELECT s.student_id, s.name, s.semester, a.attendance_p>
