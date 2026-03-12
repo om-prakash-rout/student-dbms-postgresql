@@ -37,4 +37,4 @@ student-dbms-postgresql/
 
 ## ER Diagram
 
-![ER Diagram](diagrams/er_diagram.png)
+![ER Diagram](diagrams/er_diagram(1).png)
