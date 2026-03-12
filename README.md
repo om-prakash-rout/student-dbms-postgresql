@@ -16,7 +16,6 @@ The system can generate average marks, toppers per semester, students below thre
 - Professional folder structure for organization
 
 ## Folder Structure
-
 student-dbms-postgresql/
 │
 ├── README.md                  # Project description, instructions, and features
@@ -31,8 +30,6 @@ student-dbms-postgresql/
 ├── sql/
 │   ├── schema.sql             # SQL script to create tables (students, subjects, marks, attendance)
 │   ├── sample_data.sql        # SQL script with sample data
-
-
 
 
 ## ER Diagram
