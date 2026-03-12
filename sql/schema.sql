@@ -18,7 +18,7 @@ CREATE TABLE subjects (
 -- Marks table
 CREATE TABLE marks (
     mark_id SERIAL PRIMARY KEY,
-    student_id VARCHAR(20) REFERENCES students(student_>
+    student_id VARCHAR(20) REFERENCES students(student_id),
     subject_id INT REFERENCES subjects(subject_id),
     marks INT
 );
@@ -26,6 +26,6 @@ CREATE TABLE marks (
 -- Attendance table
 CREATE TABLE attendance (
     attendance_id SERIAL PRIMARY KEY,
-    student_id VARCHAR(20) REFERENCES students(student_>
+    student_id VARCHAR(20) REFERENCES students(student_id),
     attendance_percent INT
 );
