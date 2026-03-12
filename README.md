@@ -31,7 +31,9 @@ student-dbms-postgresql/
 ├── sql/
 │   ├── schema.sql             # SQL script to create tables (students, subjects, marks, attendance)
 │   └── sample_data.sql        # SQL script with sample data
-
+│
+├── diagrams/
+│   └── er_diagram(1).png         # ER diagram of the database
 ```
 ## ER Diagram
 
